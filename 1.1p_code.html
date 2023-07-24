@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        table{                                     
+            border-collapse: collapse;
+            border:4px solid red;
+        }
+        tr,th,td{
+            padding:20px;
+            border:4px dotted blue;
+            font-size:30px;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body style="background-color: bisque;"> <!-- Inline CSS-->
+<h1 style="color: darkmagenta"> Welcome Back!!!! </h1><br>
+<h2><b>Results for Trimester 1 out 🎉</b></h2>
+<a href="https://www.deakin.edu.au/trimester-two"> Plan Ahead for Trimester2 @ Deakin University </a><!--Adding a link of external website-->
+<pre style="font-size: larger;"><!--Using the pre for the space that I want between the text-->
+<img src="https://images.shiksha.com/mediadata/images/articles/1591428914phpMABeQI.jpeg" alt="result day" width="300" height="200"><!--Adding image-->
+                                <h1><b><i>Student Details</i></b></h1>       
+    Name:- Anmolpreet Singh
+    Student id:- 222502703
+    Student type:- International Student (Full Time)
+    Degree: - Bachelor Of Information Technology  
+    
+</pre>
+<table>
+    <tr>
+    <th> Unit Code </th>
+    <th>Unit Name </th>
+    <th> Grade </th>
+    </tr>
+    <tr>
+        <td> SIT 102</td>
+        <td>Introduction to Programming</td>
+        <td>Pass(55)</td>
+    </tr>
+    <tr>
+        <td>SIT 182</td>
+        <td>Real World practices for Cyber Security </td>
+        <td>Credit(65)</td>
+    </tr>
+    <tr>
+        <td>SIT 112</td>
+        <td>Data Science Concepts</td>
+        <td>Credit(67)</td>
+    </tr>
+    <tr>
+        <td>SIT 124</td>
+        <td>Exploring I.T</td>
+        <td>High-Distinction(81)</td>
+    </tr>
+</table>
+
+<h4>Units Available for Trimester 2</h4>
+<ul><!--Creating an unordered list-->
+    <li>SIT 224:- information Technology Systems and Innovations</li><!--Adding list items-->
+    <li>SIT 103:-Database Fundamentals</li>
+    <li>MIS201:- Digital Business Analysis</li>
+    <li>SIT 120:- Introduction to responsive Web Apps</li>
+</ul>
+
+<form  action="./action.php" class="formstyle"><!--External CSS with forms.css file , using ./action.php for backend purposes-->
+    <pre><h1 style="background-color: pink; color:red"><b>                         Student's Feedback Form                                                    </b></h1></pre>
+<div>
+    <pre>
+<label for="Enter your Deakin username">Name:</label> <input type="text" placeholder="Enter your Deakin username "><br><!---->
+
+<label for="Enter the password">Password:</label><input type="Password" placeholder="Enter the password">
+    </pre>
+</div><br>
+
+<div><pre>
+<b>Select your Degree's year</b>
+<label for="101">
+    <input type="radio" name="year" value="1st year" id="101">1st year
+</label>
+<label for="102">
+    <input type="radio" name="year" value="2nd year" id="102">2nd year
+</label>
+<label for="103">
+    <input type="radio" name="year" value="3rd year" id="103">3rd year
+</label>
+</pre></div>
+<div>
+    <pre>
+ <b>Select the units in which you are confident</b>
+<label for="1">
+<input type="checkbox" value="SIT 102" name="Unit" id="1">SIT 102 (Introduction To Programming)
+</label>
+<label for="2">
+<input type="checkbox" value="SIT 182" name="unit" id="2">SIT 182 (Real World Practices for Cyber Security)
+</label>
+<label for="3">
+<input type="checkbox" value="SIT 112" name="unit" id="3"> SIT 112 (Data Science Concepts)
+</label>
+<label for="4">
+<input type="checkbox" value="SIt 124" name="unit" id="4"> SIT 124 (Exploring I.T)
+</label>
+
+    </pre>
+</div>
+<div> 
+    <fieldset>
+       <textarea cols="60" rows="10" placeholder="Enter your comments"></textarea>
+    </fieldset>
+   
+    <input type="submit" value="submit"> 
+</div>
+
+
+</form>
+</body>
+</html>
